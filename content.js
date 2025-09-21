@@ -11,8 +11,8 @@ browser.runtime.onMessage.addListener((message) => {
 function addStopButton(synth, utterance) {
 	var stopButton = document.createElement("ULF");
 	stopButton.className = "nostyle";
-	stopButton.style.width = "70px";
-	stopButton.style.height = "24px";
+	stopButton.style.width = "72px";
+	stopButton.style.height = "36px";
 	stopButton.style.cursor = "pointer";
 	stopButton.style.preventDeselect = "true";
 	stopButton.style.backgroundColor = "#cc3524ff";
@@ -21,9 +21,9 @@ function addStopButton(synth, utterance) {
 	stopButton.style.position = "fixed";
 	stopButton.style.top = "40px";
 	stopButton.style.left = "40px";
-	stopButton.style.borderRadius = "4px"
+	stopButton.style.borderRadius = "5px"
 	stopButton.style.border = "none";
-	stopButton.style.boxShadow = "2px 2px 2px black";
+	stopButton.style.boxShadow = "3px 3px 3px black";
 	stopButton.style.verticalAlign = "middle";
 	stopButton.style.textAlign = "center";
 	stopButton.style.zIndex = "90000";
