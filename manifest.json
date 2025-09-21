@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Speak Text",
+  "version": "1.0",
+  "description": "An extension to speak the selected text.",
+  "permissions": ["contextMenus"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "bubble.svg",
+    "128": "bubble.svg"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "jf505@gmx.de"
+    }
+  }
+}
