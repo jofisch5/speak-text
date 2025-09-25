@@ -10,7 +10,6 @@ browser.runtime.onMessage.addListener((message) => {
 
 function addStopButton(synth, utterance) {
 	var stopButton = document.createElement("button");
-	stopButton.className = "nostyle";
 	stopButton.style.width = "78px";
 	stopButton.style.height = "28px";
 	stopButton.style.cursor = "pointer";
